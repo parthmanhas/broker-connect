@@ -1,10 +1,8 @@
 import "../global.css";
-import { Slot, Stack } from "expo-router";
-import Footer from '@/components/footer/Footer';
+import { Slot } from "expo-router";
 
 export default function Layout() {
   return <>
-    <Slot />
-    <Footer />
+    <Slot/>
   </>;
 }

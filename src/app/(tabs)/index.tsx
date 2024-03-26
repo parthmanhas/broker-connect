@@ -1,11 +1,14 @@
 import PropertySearchComponent from '@/components/HomePage/PropertySearchComponent';
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity, TextInput } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const Page = () => {
+
+export default function Tab () {
   return (
-    <ScrollView className="bg-white p-4">
+    <SafeAreaProvider>
+      <ScrollView className="bg-slate-100 p-4">
       {/* Header */}
       <View className="p-4 flex">
         <Text className="text-xl mb-2">Find your place in</Text>
@@ -30,8 +33,8 @@ const Page = () => {
           {/* Add more views as needed */}
         </ScrollView>        
       </View>
-    </ScrollView>
+      </ScrollView>
+    </SafeAreaProvider>
+    
   );
 };
-
-export default Page;

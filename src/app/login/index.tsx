@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import React from "react";
 import { Button, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 
@@ -25,7 +26,9 @@ export default function Page() {
             />
 
             <TouchableOpacity className="bg-purple-700 w-full p-4 rounded-3xl">
-                <Text className="text-white text-center text-lg font-bold">Log in</Text>
+                <Link href='(tabs)' className="text-white text-center text-lg font-bold">
+                <Text>Log in</Text>
+                </Link>
             </TouchableOpacity>
 
             <Text className="text-purple-700 mt-4">Forgot password?</Text>
